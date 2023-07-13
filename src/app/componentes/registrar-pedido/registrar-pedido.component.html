@@ -8,7 +8,7 @@
             <div>
                 <h5>Detalles del pedido</h5>
             </div>
-            <form action="" class="row g-4" style="margin-top: 20px;">
+            <form action="" class="row g-4 overflow-auto" style="margin-top: 20px; max-height: 30em;">
                 <div class="col-12">
                     <div class="row">
                         <label class="col-2" for="dni">DNI</label>
@@ -48,8 +48,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 d-flex justify-content-center">
-                    <button class="text-center btn btn-primary btn-lg p-3 py-2 shadow">
+                <div id="elemento-referencia" class="col-12 d-flex justify-content-center">
+                    <button class="text-center btn btn-primary btn-lg p-3 py-2 shadow" (click)="agregarPlato()">
                         <span class="fw-bold">+</span>
                     </button>
                 </div>
