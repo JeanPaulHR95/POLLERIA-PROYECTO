@@ -1,0 +1,42 @@
+<div class="login-page bg-light" style="padding-top: 40px;">
+    <div class="container" style="margin: 0; min-width: 100%;">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-7 offset-lg-1" style="margin: 0;">
+              <h3 class="mb-3">Iniciar Sesión <i class="bi bi-box-arrow-in-right"></i></h3>
+                <div class="bg-white shadow rounded">
+                    <div class="row">
+                        <div class="col-md-7 pe-0">
+                            <div class="form-left h-100 py-5 px-5">
+                                <form action="" class="row g-4">
+                                        <div class="col-12">
+                                            <label>Usuario<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-person-fill"></i></div>
+                                                <input type="text" class="form-control" placeholder="Ingrese su usuario">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label>Contraseña<span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <div class="input-group-text"><i class="bi bi-lock-fill"></i></div>
+                                                <input type="text" class="form-control" placeholder="Ingrese su contraseña">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary px-4 float-end mt-4" (click)="iniciarSesion()">Iniciar Sesión</button>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-5 ps-0 d-none d-md-block">
+                            <div class="form-right w-100 h-100 bg-primary text-white text-center pt-5" style="background-image: url('../../../assets/img/polleria.jpg'); background-size: cover;">
+                                <!-- <h2 class="fs-1">Bienvenido</h2> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
