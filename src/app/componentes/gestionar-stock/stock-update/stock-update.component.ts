@@ -7,26 +7,26 @@ import { Component } from '@angular/core';
 })
 export class StockUpdateComponent {
   seleccionarInsumo: string;
-  cantidad: number;
+  stock: number;
   historial: string;
 
   constructor() {
     this.seleccionarInsumo = '';
-    this.cantidad = 0;
+    this.stock = 0;
     this.historial = '';
   }
 
   agregar(): void {
-    if (this.seleccionarInsumo && this.cantidad > 0) {
-      this.historial += `Agregar ${this.cantidad} unidades de ${this.seleccionarInsumo}\n`;
+    if (this.seleccionarInsumo && this.stock > 0) {
+      this.historial += `Agregar ${this.stock} unidades de ${this.seleccionarInsumo}\n`;
       // Lógica adicional para realizar las operaciones de agregar al stock
       this.limpiarCampos();
     }
   }
 
   quitar(): void {
-    if (this.seleccionarInsumo && this.cantidad > 0) {
-      this.historial += `Quitar ${this.cantidad} unidades de ${this.seleccionarInsumo}\n`;
+    if (this.seleccionarInsumo && this.stock > 0) {
+      this.historial += `Quitar ${this.stock} unidades de ${this.seleccionarInsumo}\n`;
       // Lógica adicional para realizar las operaciones de quitar del stock
       this.limpiarCampos();
     }
@@ -44,6 +44,6 @@ export class StockUpdateComponent {
 
   private limpiarCampos(): void {
     this.seleccionarInsumo = '';
-    this.cantidad = 0;
+    this.stock = 0;
   }
 }
