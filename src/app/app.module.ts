@@ -22,6 +22,10 @@ import { ProveedorUpdateComponent } from './componentes/administrador/proveedore
 import { MenuTablasComponent } from './componentes/administrador/reportes/menu-tablas/menu-tablas.component';
 import { TablaComprasComponent } from './componentes/administrador/reportes/tabla-compras/tabla-compras.component';
 import { TablaVentasComponent } from './componentes/administrador/reportes/tabla-ventas/tabla-ventas.component';
+import { CompraInsumosComponent } from './componentes/compra-insumos/compra-insumos.component';
+import { StockDeleteComponent } from './componentes/gestionar-stock/stock-delete/stock-delete.component';
+import { StockUpdateComponent } from './componentes/gestionar-stock/stock-update/stock-update.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +45,10 @@ import { TablaVentasComponent } from './componentes/administrador/reportes/tabla
     ProveedorUpdateComponent,
     MenuTablasComponent,
     TablaComprasComponent,
-    TablaVentasComponent
+    TablaVentasComponent,
+    CompraInsumosComponent,
+    StockDeleteComponent,
+    StockUpdateComponent,
   ],
   imports: [
     BrowserModule,
