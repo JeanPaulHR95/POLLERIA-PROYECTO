@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Gestionar Stock</h2>
+    <div>
+      <label for="seleccionar-insumo">Seleccionar insumo</label>
+      <select id="seleccionar-insumo" class="form-control">
+        <!-- Opciones del select con los insumos disponibles -->
+        <option value="insumo1">Insumo 1</option>
+        <option value="insumo2">Insumo 2</option>
+        <option value="insumo3">Insumo 3</option>
+        <!-- Agrega más opciones según corresponda -->
+      </select>
+    </div>
+    <div>
+      <label for="cantidad">Cantidad a agregar/quitar</label>
+      <input type="number" id="cantidad" class="form-control">
+    </div>
+    <div>
+      <label for="historial">Historial de la operación</label>
+      <textarea id="historial" class="form-control" rows="3" disabled></textarea>
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="agregar()">Agregar</button>
+      <button class="btn btn-primary" (click)="quitar()">Quitar</button>
+    </div>
+    <div>
+      <button class="btn btn-success" (click)="guardar()">Guardar</button>
+      <button class="btn btn-secondary" (click)="cancelar()">Cancelar</button>
+    </div>
+  </div>

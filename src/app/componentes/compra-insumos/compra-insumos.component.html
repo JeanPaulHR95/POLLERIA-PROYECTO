@@ -1,0 +1,42 @@
+<div class="container vh-100 d-flex align-items-center" style="width: 75%;">
+    <div class="row justify-content-center">
+      <div class="form-left h-100 py-5 pb-4 px-5 bg-white">
+        <div>
+          <h2>Agregar Información Compra de Insumo</h2>
+        </div>
+        <hr>
+        <form action="" class="row g-4" style="margin-top: 20px;">
+          <div class="col-12">
+            <div class="row">
+              <label class="col-2" for="nombreInsumo">Nombre Insumo</label>
+              <div class="col-4">
+                <input type="text" id="nombreInsumo" placeholder="Ingrese el nombre del insumo">
+              </div>
+              <label class="col-2" for="fechaRegistro">Fecha de registro</label>
+              <div class="col-4">
+                <input type="date" id="fechaRegistro">
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <label class="col-2" for="idProveedor">IdProveedor</label>
+              <div class="col-4">
+                <input type="text" id="idProveedor" placeholder="Ingrese el ID del proveedor">
+              </div>
+              <label class="col-2" for="cantidad">Cantidad</label>
+              <div class="col-4">
+                <input type="number" id="cantidad" placeholder="Ingrese la cantidad">
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row justify-content-end">
+              <button class="btn btn-primary mx-2" (click)="guardarCompra()">Guardar</button>
+              <button class="btn btn-secondary mx-2" (click)="cancelarCompra()">Cancelar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
