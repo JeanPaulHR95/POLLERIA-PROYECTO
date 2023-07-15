@@ -1,1 +1,90 @@
-<p>personal-delete works!</p>
+<div class="container vh-100 d-flex align-items-center" style="width: 75%;">
+    <div class="row justify-content-center">
+        <div class="form-left h-100 py-5 pb-4 px-5 bg-white">
+            <div>
+                <h2>Eliminar Trabajador</h2>
+            </div>
+            <hr>
+            <form action="" class="row g-4 overflow-auto" style="margin-top: 20px; max-height: 30em;">
+                <div class="col-12">
+                    <div class="row">
+                      <label class="col-2" for="codigo">Código</label>
+                      <div class="col-4 d-flex align-items-center">
+                        <input #codigoInput type="text" placeholder="Código del trabajador" id="codigo">
+                        <button class="btn btn-primary ms-2" (click)="buscarTrabajador()">Buscar</button>
+                      </div>
+                    </div>
+                  </div>                                    
+                <hr>
+                <div>
+                    <h5>Información del colaborador</h5>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="nombres">Nombres</label>
+                        <div class="col-4">
+                            <input type="text" id="nombres" disabled>
+                        </div>
+                        <label class="col-2" for="provincia">Provincia</label>
+                        <div class="col">
+                            <input type="text" id="provincia" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="apellidos">Apellidos</label>
+                        <div class="col-4">
+                            <input type="text" id="apellidos" disabled>
+                        </div>
+                        <label class="col-2" for="distrito">Distrito</label>
+                        <div class="col">
+                            <input type="text" id="distrito" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="sexo">Sexo</label>
+                        <div class="col-4">
+                            <input type="text" id="sexo" disabled>
+                        </div>
+                        <label class="col-2" for="puesto">Puesto</label>
+                        <div class="col">
+                            <input type="text" id="puesto" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="fechaNacimiento">F. de Nacimiento</label>
+                        <div class="col-4">
+                            <input type="text" id="fechaNacimiento" disabled>
+                        </div>
+                        <label class="col-2" for="salario">Salario</label>
+                        <div class="col">
+                            <input type="text" id="salario" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="direccion">Dirección</label>
+                        <div class="col-4">
+                            <input type="text" id="direccion" disabled>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <div class="row justify-content-end">
+                        <div class="col-8">
+                            <button type="button" class="btn btn-primary btn-lg p-3 py-2 shadow">Eliminar</button>
+                            <button type="button" class="btn btn-secondary btn-lg ms-2 p-3 py-2 shadow">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

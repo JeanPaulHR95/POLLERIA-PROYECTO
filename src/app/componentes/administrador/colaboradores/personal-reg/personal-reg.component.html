@@ -1,1 +1,103 @@
-<p>personal-reg works!</p>
+<div class="container vh-100 d-flex align-items-center" style="width: 75%;">
+    <div class="row justify-content-center">
+        <div class="form-left h-100 py-5 pb-4 px-5 bg-white">
+            <div>
+                <h2>Registrar Nuevo Trabajador</h2>
+            </div>
+            <hr>
+            <div>
+                <h5>Detalles del colaborador</h5>
+            </div>
+            <form action="" class="row g-4 overflow-auto" style="margin-top: 20px; max-height: 30em;">
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="dni">DNI</label>
+                        <div class="col-4">
+                            <input type="text" placeholder="DNI del colaborador" #dni>
+                            <div style="margin-top: 11px;">
+                                <button class="btn btn-primary" (click)="ingresarDatosTrabajador(dni.value)">Buscar</button>
+                            </div>
+                        </div>
+                        <label class="col-2" for="direccion">Dirección</label>
+                        <div class="col">
+                            <input type="text" class="w-100" placeholder="Ingrese una dirección">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="nombres">Nombres</label>
+                        <div class="col-4">
+                            <input type="text" [value]="nombreTrabajador" disabled>
+                        </div>
+                        <label class="col-2" for="provincia">Provincia</label>
+                        <div class="col">
+                            <select class="form-select w-100" name="provincia">
+                                <option value="">Seleccionar provincia</option>
+                                <option value="provincia1">Lima</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="apellidos">Apellidos</label>
+                        <div class="col-4">
+                            <input type="text" [value]="apPaterno+' '+apMaterno" disabled>
+                        </div>
+                        <label class="col-2" for="distrito">Distrito</label>
+                        <div class="col">
+                            <select class="form-select w-100" name="distrito">
+                                <option value="">Seleccionar distrito</option>
+                                <option value="distrito1">Jesus Maria</option>
+                                <option value="distrito2">Independencia</option>
+                                <option value="distrito3">Los Olivos</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="sexo">Sexo</label>
+                        <div class="col-4">
+                            <select class="form-select w-100" name="sexo">
+                                <option value="">Seleccionar sexo</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <label class="col-2" for="puesto">Puesto</label>
+                        <div class="col">
+                            <select class="form-select w-100" name="puesto">
+                                <option value="">Seleccionar puesto</option>
+                                <option value="cajero">Cajero</option>
+                                <option value="almacenero">Almacenero</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <label class="col-2" for="fechaNacimiento">F. de Nacimiento</label>
+                        <div class="col-4">
+                            <input type="text" class="w-100" placeholder="(dd/mm/aaaa)">
+                        </div>
+                        <label class="col-2" for="salario">Salario</label>
+                        <div class="col">
+                            <input type="text" class="w-100" placeholder="Ingrese el salario">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <div class="row justify-content-end">
+                        <div class="col-8">
+                            <button type="button" class="btn btn-primary btn-lg p-3 py-2 shadow">Guardar</button>
+                            <button type="button" class="btn btn-secondary btn-lg ms-2 p-3 py-2 shadow">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
